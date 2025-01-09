@@ -1,0 +1,167 @@
+                                 /* Стилизация для карточки-формы */
+
+                                            /* общий дизайн карточки */                               
+.note-form { 
+
+    width: 1152px;
+    height: 228px;
+
+    border-radius: 4px;
+    padding: 24px;
+    margin-bottom: 24px;
+
+
+    box-shadow: 0 8px 12px 0 rgba(11, 12, 13, 0.08), 0 16px 24px 0 rgba(11, 12, 13, 0.04), 0 1px 2px 0 rgba(11, 12, 13, 0.08);
+    background: #fff;
+    
+    /* шрифт */
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 200%;
+    color: #919191;
+}
+
+
+                                                /* стилизация инпутов */ 
+
+/* шрифт для инпутов */
+input[type="text"], 
+textarea {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 6px 12px;
+    box-sizing: border-box; /* Гарантирует одинаковое поведение отступов */
+    font-size: 14px; /* Размер текста внутри */
+    font-family: inherit;
+    line-height: 1.5; /* Делаем одинаковую высоту строки */
+    color: #000; /* Цвет текста */
+}
+
+input[type="text"] {
+    width: 344px;
+    height: 36px;
+}
+
+textarea {
+    resize: none;
+    width: 848px;
+    height: 84px;
+}
+
+/* шрифт для подсказок */
+input::placeholder, textarea::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,5;
+    color: #919191;
+    font-family: inherit;
+}
+
+/* делаем так чтобы лейбл был над инпутом, а не в одну строку */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* margin-bottom: 10px; */
+  }
+
+
+
+                                                /* Стилизация кружочков */
+
+fieldset {
+    all: unset;
+  }
+   
+  legend {
+    all: unset
+  }
+   
+  .radio-list {
+    display: flex;
+    gap: 14px;
+    list-style: none;
+    padding-left: 0;
+  }
+   
+   
+  .radio {
+    appearance: none;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: green;
+  }
+   
+  .radio[value="red"] {
+    background-color: #F37D7D;
+  }
+   
+  .radio[value="green"] {
+    background-color: #C2F37D;
+  }
+   
+  .radio[value="blue"] {
+    background-color: #7DE1F3;
+  }
+   
+  .radio[value="yellow"] {
+    background-color: #F3DB7D;
+  }
+   
+  .radio[value="purple"] {
+    background-color: #E77DF3;
+  }
+   
+  .radio:checked {
+    border-color: white;
+    box-shadow: 0 0 0 3px white, /* Внутренняя обводка для создания промежутка */
+    0 0 0 4.5px #007BFF; /* Внешняя обводка */
+  }
+
+                                                    /* Стилизация кнопки */
+.button-add-note {
+    background-color: #457cdc;
+    border-radius: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 232px;
+    height: 36px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    cursor: pointer;
+
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+                                            /* flex boxes */ 
+
+.container {
+    padding: 0 64px;
+}
+
+
+
+/* флексбоксы внутри карточки */
+.description-wrap {  /* контейнер для описания и кружков(+кнопк) */
+    display: flex;
+    gap: 24px;
+}
+.circle-butt-wrap{ /* контейнер кружков и кнопки */
+    display: flex;
+    flex-direction: column;
+}
+.button-add-note{ /* отступ кнопки от кружков */
+    margin-top: 12px;
+}
+
+

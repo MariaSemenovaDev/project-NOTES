@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- */ css-стили разбиты на несколько файлов (global.css, form.css, notes.css) -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/notes.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header class="header"> <!-- шапка приложения -->
+        <a href=""> <!-- лого-сылка слева -->
+            <img src="./assets/📝Notes.png" alt="notes">
+        </a>
+        <div class="menu"> <!-- количество заметок справа -->
+            <img src="./assets/notes.png" alt="">
+            <p>Всего заметок: <span class="quantity-notes">0</span></p>
+        </div>
+    </header> 
+    <main class="container"> <!-- фон, основное содержимое -->
+        <div> <!-- Карточка с добавлением заметки -->
+            <form action="" class="note-form" name="notes"> <!-- форма добавления заметки -->
+                <div class="input-container"> <!-- название заметки -->
+                    <label for="name-note">Название заметки</label>
+                    <input id="name-note" type="text" placeholder="Напишите название заметки...">
+                </div>
+                <div class="description-wrap">
+                    <div class="input-container"> <!-- описание заметки -->
+                        <label for="description-note">Описание новой заметки</label>
+                        <textarea name="" id="description-note" placeholder="Напишите описание новой заметки..."></textarea>
+                    </div>
+                    <div class="circle-butt-wrap"><!-- кружочки с выбором цвета и кнопка -->
+                        <fieldset class="fieldset">
+                            <!-- <legend class="label">Выберите цвет заметки</legend> -->
+                            <ul class="radio-list">
+                              <li>
+                                <input checked class="radio" type="radio" name="color" value="yellow" aria-label="yellow" />
+                              </li>
+                              <li>
+                                <input class="radio" type="radio" name="color" value="red" aria-label="red" />
+                              </li>
+                              <li>
+                                <input class="radio" type="radio" name="color" value="green" aria-label="green" />
+                              </li>
+                              <li>
+                                <input class="radio" type="radio" name="color" value="blue" aria-label="blue" />
+                              </li>
+                              <li>
+                                <input class="radio" type="radio" name="color" value="purple" aria-label="purple" />
+                              </li>
+                            </ul>
+                          </fieldset>
+                        <button type="submit" class="button-add-note">
+                            <img src="./assets/plus-svgrepo.png" alt="plus"
+                            width="24px" height="24px">
+                            Добавить заметку</button>                  
+                    </div>                    
+                </div>
+
+
+            </form>
+        </div>
+        <section> <!-- секция с заметками -->
+            <p class="add-notes"></p>
+            <ul class="notes-list">
+            <!-- Сюда будут рендерится заметки из JavaScript -->
+            </ul>
+
+             <!-- сообщение если нет карточек, добавлено в js -->
+            <!-- <p class="empty-notes">У вас ещё нет ни одной заметки<br>Заполните поля выше и создайте свою первую заметку!</p> -->
+
+
+
+
+            <div class="filter-box">  <!-- фильтр для отображения только избранных заметок -->
+
+                <!-- галочка для выбора избранных notes -->
+                 <!-- ЭТО ЧЕКБОКС, ПОДРУГА. ПЕРЕДЕЛАТЬ -->
+                <!-- <div class="checkbox-active">
+                    <img src="./assets/checkbox-inactive.png" alt=""
+                    width="16px"
+                    height="16px">
+                    <p>Показать только избранные заметки</p>
+                </div> -->
+
+            </div>
+
+
+            <div class="messages-box">
+                <!-- Сюда будут рендерится информационные сообщения из JavaScript -->
+            </div>
+
+        </section>
+    </main>
+
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>

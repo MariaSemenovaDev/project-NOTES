@@ -1,0 +1,32 @@
+/* Зануление, убираем отступы и рамки у всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Убираем маркеры у списков */
+ul, ol {
+    list-style: none;
+  }
+
+  /* Сброс всех стилей кнопки */
+  button {
+    all: unset;
+  }
+
+  /* Подключили шрифты, цвет фона, высота под размер экрана */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fafafc;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+

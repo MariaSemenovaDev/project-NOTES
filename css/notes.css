@@ -1,0 +1,97 @@
+/* ------------------ Сообщение, если не добавлены заметки --------- */
+.empty-notes {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #000;
+    margin-top: 138px;
+}
+
+
+
+/* ------------------ Стилизация карточки --------- */
+.new-card {
+    width: 368px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(11, 12, 13, 0.08), 0 8px 16px 0 rgba(11, 12, 13, 0.04), 0 1px 2px 0 rgba(11, 12, 13, 0.08);
+    background-color: #fff;
+    overflow: hidden; /* Чтобы содержимое не выходило за границы карточки */
+  }
+  
+  .card-top {
+    padding: 12px;
+    text-align: left;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-content {
+    padding: 12px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+  }
+
+.fave {
+    margin-right: 10px;
+}
+
+/* .delete {
+  cursor: pointer;
+} */
+
+
+/* цвета для заголовка карточки */
+.red {
+  background-color: #F37D7D;
+}
+ 
+.green {
+  background-color: #C2F37D;
+}
+ 
+.blue {
+  background-color: #7DE1F3;
+}
+ 
+.yellow {
+  background-color: #F3DB7D;
+}
+ 
+.purple {
+  background-color: #E77DF3;
+}
+
+
+/* флексбокс для избранных карточек &&  которые будут рендериться */
+.notes-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.filter-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.checkbox-active { /* флексбокс для чекбокса избранных заметок */
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+

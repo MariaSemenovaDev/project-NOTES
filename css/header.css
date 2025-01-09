@@ -1,0 +1,34 @@
+/* ---------------------- header ---------- */
+.header {
+    box-shadow: 0 1px 3px 0 rgba(11, 12, 13, 0.16), 0 0 1px 0 rgba(11, 12, 13, 0.24); /* Тень */
+    padding: 18px 64px; /* Отступы: сверху и по бокам */
+
+    /* Стили для текста */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    background-color: #fff;;
+    margin-bottom: 24px; /* Внешний отступ, чтобы карточка отлепилась */
+
+}
+
+/* Стилизация для выбранных заметок */
+.quantity-notes {
+    font-weight: 700;
+}
+
+
+                                            /* flex boxes */ 
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 12px;
+}
+
