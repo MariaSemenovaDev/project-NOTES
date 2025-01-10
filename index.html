@@ -71,31 +71,24 @@
             </form>
         </div>
         <section> <!-- секция с заметками -->
-            <p class="add-notes"></p>
-            <ul class="notes-list">
-            <!-- Сюда будут рендерится заметки из JavaScript -->
-            </ul>
-
-             <!-- сообщение если нет карточек, добавлено в js -->
-            <!-- <p class="empty-notes">У вас ещё нет ни одной заметки<br>Заполните поля выше и создайте свою первую заметку!</p> -->
 
 
 
 
             <div class="filter-box">  <!-- фильтр для отображения только избранных заметок -->
-
-                <!-- галочка для выбора избранных notes -->
-                 <!-- ЭТО ЧЕКБОКС, ПОДРУГА. ПЕРЕДЕЛАТЬ -->
-                <!-- <div class="checkbox-active">
-                    <img src="./assets/checkbox-inactive.png" alt=""
-                    width="16px"
-                    height="16px">
-                    <p>Показать только избранные заметки</p>
-                </div> -->
+                <label class="only-favs">
+                    <input type="checkbox" id="favorite-filter">
+                    Показать только избранные заметки
+                </label>
 
             </div>
+            <p class="add-notes"></p>
 
-
+            <ul class="notes-list">
+                <!-- Сюда будут рендерится заметки из JavaScript -->
+                </ul>
+    
+    
             <div class="messages-box">
                 <!-- Сюда будут рендерится информационные сообщения из JavaScript -->
             </div>

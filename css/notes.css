@@ -41,11 +41,12 @@
 
 .fave {
     margin-right: 10px;
+    cursor: pointer;
 }
 
-/* .delete {
+.delete {
   cursor: pointer;
-} */
+}
 
 
 /* цвета для заголовка карточки */
@@ -86,12 +87,12 @@
   flex-wrap: wrap;
   justify-content: start;
   align-items: flex-start;
+  gap: 24px;
 }
 
-.checkbox-active { /* флексбокс для чекбокса избранных заметок */
-  display: flex;
-  gap: 8px;
-  align-items: center;
+
+/* ------------------ чекбокс, когда добавлены заметки --------- */
+.only-favs {
   margin-bottom: 12px;
-}
-
+  margin-left: auto;
+  }

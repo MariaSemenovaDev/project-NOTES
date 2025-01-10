@@ -2,8 +2,9 @@
 
                                             /* общий дизайн карточки */                               
 .note-form { 
-
-    width: 1152px;
+/* 
+    max-width: 1152px; */
+    width: 100%;
     height: 228px;
 
     border-radius: 4px;
